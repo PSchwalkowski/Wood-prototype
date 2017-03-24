@@ -5,7 +5,10 @@
 				'mixins',
 				'fonts',
 				'grid',
-				'utility';
+				'utility',
+				'elements/general',
+				'elements/sections',
+				'elements/navbar';
 
 html {
 	font-size: 16px;
@@ -19,12 +22,4 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-button {
-  padding: 0;
-}
-
-.section-full {
-	height: 100vh;
 }
