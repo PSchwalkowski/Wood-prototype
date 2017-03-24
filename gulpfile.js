@@ -31,8 +31,14 @@ gulp.task('dev', () => {
 });
 
 gulp.task('sass', () => {
-  return gulp.src(config.appPath + 'assets/scss/**/*.scss')
-             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+  return gulp.src(config.appPath + 'assets/scss/' + config.appFile + '.scss')
+             .pipe(sass({
+							 outputStyle: 'compressed',
+							 includePaths: [
+								 'node_modules/susy/sass',
+								 'node_modules/sass-mq/_mq.scss',
+							 ]
+						 }).on('error', sass.logError))
              .pipe(concatCss(config.appFile + '.min.css'))
              .pipe(autoprefixer({
                 browsers: ['last 2 versions'],
@@ -47,7 +53,6 @@ gulp.task('sass', () => {
 gulp.task('js', () => {
   return gulp.src([
                 config.appPath + 'assets/js/custom/' + config.appFile + '.js',
-								config.appPath + 'assets/js/vendors/*.js'
               ])
              .pipe(concat(config.appFile + '.js'))
              .pipe(gulp.dest(config.appPath + 'assets/js'))
