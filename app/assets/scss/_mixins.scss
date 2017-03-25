@@ -8,3 +8,10 @@
 		clear: both;
 	}
 }
+
+@mixin section-background-image($image) {
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba($black, .5), rgba($black, .5)),
+										linear-gradient(rgba($green-darken, .25), rgba($black, .25)),
+										url($image);
+}

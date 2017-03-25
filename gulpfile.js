@@ -33,7 +33,7 @@ gulp.task('dev', () => {
 gulp.task('sass', () => {
   return gulp.src(config.appPath + 'assets/scss/' + config.appFile + '.scss')
              .pipe(sass({
-							 outputStyle: 'compressed',
+							//  outputStyle: 'compressed',
 							 includePaths: [
 								 'node_modules/susy/sass',
 								 'node_modules/sass-mq/_mq.scss',

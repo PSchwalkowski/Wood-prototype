@@ -1,0 +1,45 @@
+.navbar-top {
+	position: fixed;
+	width: 100%;
+	padding: 2em 0;
+}
+
+.page-logo {
+	margin-top: .5em;
+	margin-bottom: 0;
+
+	a {
+		color: $green-primary;
+	}
+}
+
+.main-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+	text-transform: uppercase;
+
+	a {
+		display: inline-block;
+		color: $green-primary;
+		padding: 1em;
+	}
+
+	li {
+		float: left;
+
+		&.active,
+		&:hover {
+			background-color: rgba($green-primary, .25);
+		}
+
+		&,
+		&.active,
+		&:hover {
+			transition: background-color .5s ease;
+		}
+	}
+}
+
+// TODO: Animate navbar on scroll
