@@ -7,19 +7,34 @@ var APP_MODULE = function($) {
       },
 
 			initScreenScroll: function() {
-				this.animateSectionDecorators();
+				this.initNavbar();
+				this.animateSVG();
+			},
+
+			initNavbar: function() {
+				if ($(window).scrollTop() > 120) {
+					$('.navbar-top').addClass('navbar-small');
+				} else {
+					$('.navbar-top').removeClass('navbar-small');
+				}
 			},
 
 			/**
-			 * Add class to decorators which will animate them
+			 * Animate SVG
 			 * @return {void}
 			 */
-			animateSectionDecorators: function() {
-				var decorators = $('.section-decorator');
+			animateSVG: function() {
+				var svgList = $('.svg-animate');
 				var _self = this;
-				decorators.each(function() {
+				svgList.each(function(i, svg) {
 					if (_self._isInViewport(this)) {
-						$('svg', this).addClass('section-decorator-load');
+						if ($(this).data('delay') > 0) {
+							setTimeout(function () {
+								$(svg).addClass('svg-load');
+							}, $(this).data('delay'));
+						} else {
+							$(this).addClass('svg-load');
+						}
 					}
 				});
 			},

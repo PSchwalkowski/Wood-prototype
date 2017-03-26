@@ -1,25 +1,34 @@
 svg {
 	fill: currentColor;
-	stroke: black;
-
+	stroke: $black;
 }
 
-svg#icon- {
-	&section-decorator {
-		width: 33px;
-		height: 126px;
-		fill: none;
-		stroke: $green-primary;
-		stroke-dasharray: 75;
-		stroke-dashoffset: 75;
-
-		&.section-decorator-load {
-			animation: section-decorator-load 1.5s linear forwards;
+svg {
+	&#icon {
+		&-section-decorator {
+			width: 33px;
+			height: 126px;
+			fill: none;
+			stroke: $green-primary;
+			stroke-dasharray: 75;
+			stroke-dashoffset: 75;
 		}
+
+		&-hexagon {
+			width: 150px;
+			height: 170px;
+			stroke: $green-primary;
+			stroke-dasharray: 120;
+			stroke-dashoffset: 120;
+		}
+	}
+
+	&.svg-load {
+		animation: svg-load 1.5s linear forwards;
 	}
 }
 
-@keyframes section-decorator-load {
+@keyframes svg-load {
   to {
     stroke-dashoffset: 0;
   }

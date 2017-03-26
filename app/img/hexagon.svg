@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+		 xmlns:xlink="http://www.w3.org/1999/xlink"
+		 width="150"
+	   height="170"
+	   viewBox="0 0 39.687499 44.979168"
+	   version="1.1">
+  <defs id="defs2" />
+  <g id="hexagon" transform="translate(0,-252.02082)">
+    <path
+       style="fill:none;stroke-width:0.5px;"
+       d="m 19.84375,
+			 		254.78885 -17.0666348,
+					9.85343 4e-7,
+					19.70685 17.0666354,
+					9.85343 17.066634,
+					-9.85343 V 264.64228 L 19.84375,
+					254.78885"/>
+  </g>
+</svg>
