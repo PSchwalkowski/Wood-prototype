@@ -1,12 +1,26 @@
 svg {
 	fill: currentColor;
 	stroke: black;
+
 }
 
 svg#icon- {
 	&section-decorator {
 		width: 33px;
 		height: 126px;
+		fill: none;
 		stroke: $green-primary;
+		stroke-dasharray: 75;
+		stroke-dashoffset: 75;
+
+		&.section-decorator-load {
+			animation: section-decorator-load 1.5s linear forwards;
+		}
 	}
+}
+
+@keyframes section-decorator-load {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
