@@ -1,7 +1,35 @@
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+
+	&, body {
+	  -webkit-font-smoothing: subpixel-antialiased;
+	  -webkit-appearance: none;
+	}
+}
+
+body {
+	font-family: 'Raleway';
+	color: lighten($black, 75);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 a {
 	text-decoration: none;
 }
 
 button {
   padding: 0;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h2,
+h3 {
+	color: $green-primary;
 }

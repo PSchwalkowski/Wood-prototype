@@ -1,5 +1,6 @@
 .section {
 	background-color: $section-white;
+	position: relative;
 
 	&-full {
 		min-height: 100vh;
@@ -11,76 +12,20 @@
 }
 
 .section-decorator {
-	&-top:before,
-	&-bottom:after {
-		content: '';
-		display: block;
-		height: 120px;
-		width: 30px;
-		margin: 0 auto;
-		background-size: contain;
-		background-repeat: no-repeat;
+	&-bottom {
+		padding-bottom: calc(126px + 2em);
 	}
 
-	&-top:before {
-		background-image: url('/img/section-decorator.png');
+	text-align: center;
+
+	&:first-of-type {
+		margin-bottom: 2em;
 	}
 
-	&-bottom:after {
-		background-image: url('/img/section-decorator.png');
+	&:last-of-type {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 		transform: rotate(180deg);
-		opacity: .5;
 	}
 }
-
-// .section-decorator {
-// 	&-top,
-// 	&-bottom {
-// 		margin: 0 auto;
-// 		position: relative;
-//
-// 		&:before {
-// 			content: '';
-// 			display: block;
-// 			height: 90px;
-// 			width: 3px;
-// 			margin: 0 auto;
-// 		}
-//
-// 		&:after {
-// 			content: '';
-// 			width: 30px;
-// 			height: 30px;
-// 			position: absolute;
-// 			left: 50%;
-// 			transform: translate(-50%, 100%);
-// 			background-image: url('/img/hexagon.png');
-// 			background-size: contain;
-// 			background-repeat: no-repeat;
-// 		}
-// 	}
-//
-// 	&-top {
-// 		margin-bottom: 50px;
-//
-// 		&:before {
-// 			background-color: $green-primary;
-// 		}
-//
-// 		&:after {
-// 			bottom: 0;
-// 		}
-// 	}
-//
-// 	&-bottom {
-// 		margin-top: 50px;
-//
-// 		&:before {
-// 			background-color: rgba($green-primary, .5);
-// 		}
-//
-// 		&:after {
-// 			top: 0;
-// 		}
-// 	}
-// }

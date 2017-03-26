@@ -6,24 +6,7 @@
 				'fonts',
 				'grid',
 				'utility',
+				'elements/svg',
 				'elements/general',
 				'elements/sections',
 				'elements/navbar';
-
-html {
-	font-size: 16px;
-	box-sizing: border-box;
-
-	&, body {
-	  -webkit-font-smoothing: subpixel-antialiased;
-	  -webkit-appearance: none;
-	}
-}
-
-body {
-	font-family: 'Raleway';
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}

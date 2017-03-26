@@ -1,0 +1,12 @@
+svg {
+	fill: currentColor;
+	stroke: black;
+}
+
+svg#icon- {
+	&section-decorator {
+		width: 33px;
+		height: 126px;
+		stroke: $green-primary;
+	}
+}
