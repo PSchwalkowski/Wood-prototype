@@ -10,9 +10,15 @@
 }
 
 .spacer {
-	margin-bottom: 2em;
+	height: 3em;
 }
 
 .hidden {
 	display: none;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }

@@ -1,3 +1,23 @@
 .icon-box {
 	text-align: center;
+
+	&-horizontal {
+		display: flex;
+		text-align: left;
+
+		.content {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.title {
+			margin-bottom: 0;
+		}
+
+		.subtitle {
+			margin-top: .5em;
+			font-size: .85em;
+			font-family: 'Raleway-Bold';
+		}
+	}
 }

@@ -7,10 +7,6 @@
 	}
 }
 
-#section-1 {
-	@include section-background-image('/img/section-1-bg.jpg');
-}
-
 .section-decorator {
 	&-bottom {
 		padding-bottom: calc(126px + 2em);
@@ -27,5 +23,14 @@
 		bottom: 0;
 		width: 100%;
 		transform: rotate(180deg);
+	}
+}
+
+#section {
+	&-1 {
+		@include section-background-image('/img/section-1-bg.jpg');
+	}
+	&-3 {
+		@include section-background-image('/img/section-3-bg.jpg', .75);
 	}
 }

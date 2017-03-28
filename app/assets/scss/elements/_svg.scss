@@ -26,6 +26,17 @@ svg {
 	&.svg-load {
 		animation: svg-load 1.5s linear forwards;
 	}
+
+	&.icon-rotated {
+
+		&-30 {
+			transform: rotate(30deg);
+		}
+
+		&-60 {
+			transform: rotate(60deg);
+		}
+	}
 }
 
 @keyframes svg-load {
@@ -33,3 +44,8 @@ svg {
     stroke-dashoffset: 0;
   }
 }
+
+// @see: https://css-tricks.com/forums/topic/responsive-hexagon-clipmask-with-image/
+// .polygon-clip-hexagon {
+//   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+// }

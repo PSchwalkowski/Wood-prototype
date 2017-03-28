@@ -26,6 +26,7 @@ $mq-breakpoints: (
   float: left;
   padding-left: $susy-gutter-width;
   padding-right: $susy-gutter-width;
+	min-height: 1px;
 }
 
 // common styling applied to any row (class="row" in bootstrap)

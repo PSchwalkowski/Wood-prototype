@@ -9,9 +9,9 @@
 	}
 }
 
-@mixin section-background-image($image) {
+@mixin section-background-image($image, $opacity: .25) {
 	background-repeat: no-repeat;
 	background-image: linear-gradient(rgba($black, .5), rgba($black, .5)),
-										linear-gradient(rgba($green-darken, .25), rgba($black, .25)),
+										linear-gradient(rgba($green-darken, $opacity), rgba($black, $opacity)),
 										url($image);
 }
