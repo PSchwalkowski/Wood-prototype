@@ -8,6 +8,7 @@ var APP_MODULE = function($) {
 
 			initScreenScroll: function() {
 				this.initNavbar();
+				this.fixSections();
 				this.animateSVG();
 			},
 
@@ -17,6 +18,14 @@ var APP_MODULE = function($) {
 				} else {
 					$('.navbar-top').removeClass('navbar-small');
 				}
+			},
+
+			fixSections: function() {
+				$('.section-decorator-bottom').each(function() {
+					$(this).parent().css({
+						paddingBottom: 'calc(' + $(this).height() + 'px + 2em)'
+					});
+				});
 			},
 
 			/**
