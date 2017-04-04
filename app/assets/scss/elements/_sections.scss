@@ -40,4 +40,9 @@
 	&-5 {
 		background-color: $section-green-light;
 	}
+
+	&-7 {
+		@include section-background-image('/img/section-7-bg.jpg', .75);
+		background-size: cover;
+	}
 }
