@@ -8,29 +8,37 @@
 }
 
 .section-decorator {
-	&-bottom {
-		padding-bottom: calc(126px + 2em);
-	}
-
 	text-align: center;
 
-	&:first-of-type {
-		margin-bottom: 2em;
+	&-top {
+		padding-bottom: 2em;
 	}
 
-	&:last-of-type {
+	&-bottom {
+		padding-bottom: calc(126px + 2em);
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 		transform: rotate(180deg);
 	}
+
+	&-top-horizontal {
+		padding-top: 4em;
+		padding-bottom: 2em;
+	}
 }
 
 #section {
+
 	&-1 {
 		@include section-background-image('/img/section-1-bg.jpg');
 	}
+
 	&-3 {
 		@include section-background-image('/img/section-3-bg.jpg', .75);
+	}
+
+	&-5 {
+		background-color: $section-green-light;
 	}
 }

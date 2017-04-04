@@ -14,6 +14,15 @@ svg {
 			stroke-dashoffset: 75;
 		}
 
+		&-section-decorator-horizontal {
+			width: 160px;
+			height: 30px;
+			fill: none;
+			stroke: $green-primary;
+			stroke-dasharray: 75;
+			stroke-dashoffset: 75;
+		}
+
 		&-hexagon {
 			width: 150px;
 			height: 170px;
