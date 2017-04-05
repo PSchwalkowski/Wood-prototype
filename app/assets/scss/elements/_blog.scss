@@ -1,0 +1,7 @@
+.blog-post {
+
+	figure {
+		@include hexagon();
+		@include span(6 of 12);
+	}
+}

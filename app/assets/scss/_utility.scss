@@ -10,7 +10,15 @@
 }
 
 .spacer {
-	height: 3em;
+	height: 3rem;
+
+	&-x2 {
+		height: 6rem;
+	}
+
+	&-x3 {
+		height: 9rem;
+	}
 }
 
 .hidden {
@@ -21,4 +29,8 @@
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+.clearfix {
+	@include clearfix();
 }
